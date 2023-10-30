@@ -1,0 +1,6 @@
+Flask
+Gunicorn
+nltk
+konlpy
+pandas
+wordcloud
