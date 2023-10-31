@@ -9,6 +9,9 @@ from PIL import Image
 from io import BytesIO
 from flask_cors import CORS
 
+nltk.download("punkt")
+nltk.download("averaged_perceptron_tagger")
+
 test_lyrics = [
     """I walk a lonely road
 The only one that I have ever known
