@@ -2,3 +2,4 @@ Flask
 nltk
 konlpy
 wordcloud
+flask_cors
