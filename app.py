@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, send_file, request
-from konlpy.tag import Hannanum
+from konlpy.tag import Mecab
 import nltk
 from nltk import flatten
 from wordcloud import WordCloud, ImageColorGenerator
@@ -143,7 +143,7 @@ def upload():
             print("error: format not supported")
             return jsonify({"error": "format not supported"})
 
-        hannanum = Hannanum()
+        hannanum = Mecab()
 
         word_list = flatten(hannanum.nouns(test_lyrics[album]))
 
